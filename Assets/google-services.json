@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222106411451",
+    "project_id": "arfurnitue",
+    "storage_bucket": "arfurnitue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222106411451:android:491fe837a4163aba16249e",
+        "android_client_info": {
+          "package_name": "com.song.ar_furniture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222106411451-7l4ebo70ara79c7ic6ibbeouevnuhdku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtSu2JL9G-OwH3j9tSLZ5mlkWgM4MxVIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222106411451-7l4ebo70ara79c7ic6ibbeouevnuhdku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
