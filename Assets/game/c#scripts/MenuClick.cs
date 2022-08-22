@@ -5,15 +5,29 @@ public class MenuClick : MonoBehaviour
 {
 
     public Transform[] transforms;
-    
-    public void SetPosition()
+    bool isOpen = false;
+
+    public void SettingPostion()
+    {
+        if(!isOpen)
+        {
+            SetPosition();
+            isOpen = true;
+        }
+        else
+        {
+            ResetPosition();
+            isOpen = false;
+        }
+    }
+    private void SetPosition()
     {
         for(int i = 0; i < transforms.Length; i++)
         {
             transforms[i].gameObject.SetActive(true);
         }
     }
-    public void ResetPosition()
+    private void ResetPosition()
     {
         for(int i = 0; i < transforms.Length; i++)
         {
