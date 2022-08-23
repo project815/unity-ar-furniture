@@ -7,6 +7,7 @@ public class MenuSliding : MonoBehaviour
 
     bool isShow = false;
     
+    
     public void ShowingButton()
     {
         if(isShow)
