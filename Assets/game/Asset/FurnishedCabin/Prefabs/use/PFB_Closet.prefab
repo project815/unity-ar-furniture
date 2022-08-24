@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33000014277133490}
   - component: {fileID: 23000012718520536}
   - component: {fileID: 64000013870767930}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: doorR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000014137976550}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: grp_doorL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 33000011749529954}
   - component: {fileID: 23000012696852518}
   - component: {fileID: 64000010320867016}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 33000013578885416}
   - component: {fileID: 23000013553382408}
   - component: {fileID: 64000010461167922}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: doorL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,8 @@ GameObject:
   - component: {fileID: 95000011105672242}
   - component: {fileID: 1205274557523168046}
   - component: {fileID: 1090661098596571028}
-  m_Layer: 8
+  - component: {fileID: -3880640151471876781}
+  m_Layer: 6
   m_Name: PFB_Closet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,6 +441,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3880640151471876781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012593365136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac416f2493e11049b75a498cc9a217f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeSelected: {fileID: 0}
 --- !u!1 &1000013877102048
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000011842447506}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: grp_doorR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

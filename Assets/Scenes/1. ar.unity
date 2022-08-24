@@ -328,28 +328,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 18333723}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 18333723}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_DiningChair
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 636702625}
@@ -628,7 +616,6 @@ GameObject:
   - component: {fileID: 32333208}
   - component: {fileID: 32333207}
   - component: {fileID: 32333206}
-  - component: {fileID: 32333209}
   m_Layer: 5
   m_Name: TVstand
   m_TagString: Untagged
@@ -725,18 +712,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: ModelIfo, Assembly-CSharp
         m_MethodName: Open
@@ -749,16 +724,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 32333209}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 32333209}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_TVStand
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &32333207
@@ -799,60 +774,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32333204}
   m_CullTransparentMesh: 1
---- !u!114 &32333209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32333204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 3
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &50840280
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +853,127 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50840280}
+  m_CullTransparentMesh: 1
+--- !u!1 &51604944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 51604945}
+  - component: {fileID: 51604948}
+  - component: {fileID: 51604947}
+  - component: {fileID: 51604946}
+  m_Layer: 5
+  m_Name: Button_Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &51604945
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51604944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1035128276}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 248, y: -628}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &51604946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51604944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 51604947}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &51604947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51604944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: dc2182bcc2ce02e4ab8878cfa9947c01, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &51604948
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51604944}
   m_CullTransparentMesh: 1
 --- !u!224 &53263524 stripped
 RectTransform:
@@ -1351,7 +1393,6 @@ GameObject:
   - component: {fileID: 170080168}
   - component: {fileID: 170080167}
   - component: {fileID: 170080166}
-  - component: {fileID: 170080169}
   m_Layer: 5
   m_Name: Sofasmall
   m_TagString: Untagged
@@ -1448,18 +1489,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: ModelIfo, Assembly-CSharp
         m_MethodName: Open
@@ -1472,16 +1501,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 32333209}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 170080169}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_SofaSmall
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &170080167
@@ -1522,60 +1551,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170080164}
   m_CullTransparentMesh: 1
---- !u!114 &170080169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170080164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 6
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &170585058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1714,6 @@ GameObject:
   - component: {fileID: 201142774}
   - component: {fileID: 201142773}
   - component: {fileID: 201142772}
-  - component: {fileID: 201142775}
   m_Layer: 5
   m_Name: Tv
   m_TagString: Untagged
@@ -1836,18 +1810,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: ModelIfo, Assembly-CSharp
         m_MethodName: Open
@@ -1860,16 +1822,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 32333209}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 201142775}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_TV
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &201142773
@@ -1910,60 +1872,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201142770}
   m_CullTransparentMesh: 1
---- !u!114 &201142775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201142770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 4
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &229756859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +1951,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229756859}
+  m_CullTransparentMesh: 1
+--- !u!1 &232557908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232557909}
+  - component: {fileID: 232557911}
+  - component: {fileID: 232557910}
+  m_Layer: 5
+  m_Name: Text_instantiateMode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &232557909
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232557908}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 657872415}
+  m_Father: {fileID: 1035128276}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -1450, y: 570}
+  m_SizeDelta: {x: 500, y: 158.1}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &232557910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232557908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC0DD\uC131\uBAA8\uB4DC"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2a8d4905528027644b7a02c583f4108a, type: 2}
+  m_sharedMaterial: {fileID: -6665052436223707078, guid: 2a8d4905528027644b7a02c583f4108a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 126
+  m_fontSizeBase: 126
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &232557911
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232557908}
   m_CullTransparentMesh: 1
 --- !u!1 &233488460
 GameObject:
@@ -2992,6 +3036,107 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337714926}
   m_CullTransparentMesh: 1
+--- !u!1 &339091396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339091400}
+  - component: {fileID: 339091399}
+  - component: {fileID: 339091398}
+  - component: {fileID: 339091397}
+  m_Layer: 6
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &339091397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339091396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &339091398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339091396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &339091399
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339091396}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &339091400
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339091396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 694779991}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.591}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &355673488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,7 +3432,7 @@ GameObject:
   - component: {fileID: 459694778}
   - component: {fileID: 459694777}
   m_Layer: 5
-  m_Name: Button_SelectionMode
+  m_Name: Button_ModeChanage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3302,7 +3447,7 @@ RectTransform:
   m_GameObject: {fileID: 459694775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.101, y: 5.101, z: 5.101}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 952834054}
@@ -3311,8 +3456,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 171, y: -107}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 1387, y: 94}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459694777
 MonoBehaviour:
@@ -3390,8 +3535,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 59e62f7c1efac4045912b38190e96b21, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4556,7 +4701,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -4857,7 +5002,6 @@ GameObject:
   - component: {fileID: 592550113}
   - component: {fileID: 592550112}
   - component: {fileID: 592550111}
-  - component: {fileID: 592550114}
   m_Layer: 5
   m_Name: Coffee Table
   m_TagString: Untagged
@@ -4954,18 +5098,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: ModelIfo, Assembly-CSharp
         m_MethodName: Open
@@ -4978,16 +5110,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 32333209}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 592550114}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_CoffeeTable
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &592550112
@@ -5028,60 +5160,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592550109}
   m_CullTransparentMesh: 1
---- !u!114 &592550114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592550109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 2
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &603092048
 GameObject:
   m_ObjectHideFlags: 0
@@ -5720,6 +5798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cffd69e77be94ff43aa6d1849eb2174c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text_tittle: {fileID: 170585060}
 --- !u!1 &648085564
 GameObject:
   m_ObjectHideFlags: 0
@@ -5979,6 +6058,127 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &657872414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657872415}
+  - component: {fileID: 657872418}
+  - component: {fileID: 657872417}
+  - component: {fileID: 657872416}
+  m_Layer: 5
+  m_Name: Button_info_selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &657872415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657872414}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 232557909}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 150, y: 0}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &657872416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657872414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 657872417}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &657872417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657872414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 79d512fef7bc41c48a7ec4f840330d7a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &657872418
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657872414}
+  m_CullTransparentMesh: 1
 --- !u!1 &676921984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,6 +6258,79 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676921984}
+  m_CullTransparentMesh: 1
+--- !u!1 &694779990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694779991}
+  - component: {fileID: 694779993}
+  - component: {fileID: 694779992}
+  m_Layer: 6
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &694779991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694779990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 339091400}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &694779992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694779990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: a75e30c3b0b7848698e88309ce9d3f2d, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &694779993
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694779990}
   m_CullTransparentMesh: 1
 --- !u!1 &704511474
 GameObject:
@@ -6524,7 +6797,6 @@ GameObject:
   - component: {fileID: 749167709}
   - component: {fileID: 749167708}
   - component: {fileID: 749167707}
-  - component: {fileID: 749167710}
   m_Layer: 5
   m_Name: ChestDraw
   m_TagString: Untagged
@@ -6621,30 +6893,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 749167710}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 749167710}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
@@ -6655,6 +6903,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PFB_ChestOfDraws
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &749167708
@@ -6695,60 +6955,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749167705}
   m_CullTransparentMesh: 1
---- !u!114 &749167710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749167705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 9
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &750052859
 GameObject:
   m_ObjectHideFlags: 0
@@ -6914,6 +7120,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755285084}
   m_CullTransparentMesh: 1
+--- !u!1 &760271468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760271470}
+  - component: {fileID: 760271469}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &760271469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760271468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f05ed908a74fda499b627b8b8a29991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furniture:
+  - tittle: "- \uD734\uC9C0\uD1B5 -"
+    furnitureModel: {fileID: 72734095}
+    button_AR: {fileID: 886281740}
+  - tittle: "- \uD0C1\uC7901 -"
+    furnitureModel: {fileID: 1861112606}
+    button_AR: {fileID: 2126819446}
+  - tittle: "- \uD0C1\uC7902 -"
+    furnitureModel: {fileID: 707461020}
+    button_AR: {fileID: 1947540511}
+  - tittle: "- TV\uAC70\uCE58\uB300 -"
+    furnitureModel: {fileID: 770717217}
+    button_AR: {fileID: 528303101}
+  - tittle: '- TV -'
+    furnitureModel: {fileID: 1565811652}
+    button_AR: {fileID: 1179046700}
+  - tittle: "- \uC18C\uD30C -"
+    furnitureModel: {fileID: 256504038}
+    button_AR: {fileID: 718699995}
+  - tittle: "- \uC791\uC740 \uC18C\uD30C -"
+    furnitureModel: {fileID: 1468501361}
+    button_AR: {fileID: 1253779633}
+  - tittle: "- \uCE68\uB300 -"
+    furnitureModel: {fileID: 928743500}
+    button_AR: {fileID: 1732055845}
+  - tittle: "- \uCE68\uC2E4\uC18C\uD30C -"
+    furnitureModel: {fileID: 750805569}
+    button_AR: {fileID: 650333555}
+  - tittle: "- \uC11C\uB78D\uC7A5 -"
+    furnitureModel: {fileID: 1764191510}
+    button_AR: {fileID: 555955780}
+  - tittle: "- \uC637\uC7A5 -"
+    furnitureModel: {fileID: 1216314095}
+    button_AR: {fileID: 808255753}
+  - tittle: "- \uCEE4\uD2BC -"
+    furnitureModel: {fileID: 865741019}
+    button_AR: {fileID: 1162907137}
+  - tittle: "- \uC791\uC740 \uCEE4\uD2BC -"
+    furnitureModel: {fileID: 993298560}
+    button_AR: {fileID: 1013407761}
+  - tittle: "- \uAC70\uC6B8 -"
+    furnitureModel: {fileID: 396611402}
+    button_AR: {fileID: 1944870512}
+  - tittle: "- \uC758\uC790 -"
+    furnitureModel: {fileID: 2070932147}
+    button_AR: {fileID: 1202304327}
+  - tittle: "- \uC2DD\uD0C1 -"
+    furnitureModel: {fileID: 1470886316}
+    button_AR: {fileID: 1409427024}
+  - tittle: "- \uB0C9\uC7A5\uACE0 -"
+    furnitureModel: {fileID: 1741258304}
+    button_AR: {fileID: 556984737}
+  - tittle: "- \uC2F1\uD06C\uB300 -"
+    furnitureModel: {fileID: 1333029518}
+    button_AR: {fileID: 931920098}
+  - tittle: "- \uAC00\uC2A4\uB808\uC778\uC9C0 -"
+    furnitureModel: {fileID: 1085991600}
+    button_AR: {fileID: 943026604}
+--- !u!4 &760271470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760271468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -530, y: 937.0001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770717217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010719739470, guid: 2c955ce5cc6b1a542900b51ed266259c, type: 3}
@@ -6931,7 +7239,6 @@ GameObject:
   - component: {fileID: 771560851}
   - component: {fileID: 771560850}
   - component: {fileID: 771560849}
-  - component: {fileID: 771560852}
   m_Layer: 5
   m_Name: Basket
   m_TagString: Untagged
@@ -6953,7 +7260,7 @@ RectTransform:
   m_Children:
   - {fileID: 361254566}
   m_Father: {fileID: 1571703408}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -7028,18 +7335,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: ModelIfo, Assembly-CSharp
         m_MethodName: Open
@@ -7052,16 +7347,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 771560852}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 771560852}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_Basket
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &771560850
@@ -7102,60 +7397,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771560847}
   m_CullTransparentMesh: 1
---- !u!114 &771560852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771560847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 0
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &808255751
 GameObject:
   m_ObjectHideFlags: 0
@@ -7437,7 +7678,6 @@ GameObject:
   - component: {fileID: 830797948}
   - component: {fileID: 830797947}
   - component: {fileID: 830797946}
-  - component: {fileID: 830797949}
   m_Layer: 5
   m_Name: CurtainSmall
   m_TagString: Untagged
@@ -7534,30 +7774,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 749167710}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 830797949}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
@@ -7568,6 +7784,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PFB_CurtainSmall
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &830797947
@@ -7608,60 +7836,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830797944}
   m_CullTransparentMesh: 1
---- !u!114 &830797949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830797944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 12
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &835558050
 GameObject:
   m_ObjectHideFlags: 0
@@ -7771,28 +7945,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 18333723}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 835558055}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_Stove
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 636702625}
@@ -7911,7 +8073,6 @@ GameObject:
   - component: {fileID: 836517036}
   - component: {fileID: 836517035}
   - component: {fileID: 836517034}
-  - component: {fileID: 836517037}
   m_Layer: 5
   m_Name: BedroomSofa
   m_TagString: Untagged
@@ -8008,30 +8169,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 749167710}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 836517037}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
@@ -8042,6 +8179,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PFB_BedroomSofa
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &836517035
@@ -8082,60 +8231,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836517032}
   m_CullTransparentMesh: 1
---- !u!114 &836517037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836517032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 8
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!224 &854360863 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 22456078, guid: d2c67c9f8ecea45ad946dc423474b514, type: 3}
@@ -8158,7 +8253,6 @@ GameObject:
   - component: {fileID: 878725599}
   - component: {fileID: 878725598}
   - component: {fileID: 878725597}
-  - component: {fileID: 878725600}
   m_Layer: 5
   m_Name: Bed
   m_TagString: Untagged
@@ -8255,30 +8349,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 749167710}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 878725600}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
@@ -8289,6 +8359,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PFB_Bed
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &878725598
@@ -8329,60 +8411,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878725595}
   m_CullTransparentMesh: 1
---- !u!114 &878725600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878725595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 7
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &886281738
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,79 +8590,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &891297458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 891297459}
-  - component: {fileID: 891297461}
-  - component: {fileID: 891297460}
-  m_Layer: 5
-  m_Name: RawImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &891297459
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891297458}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1000001, y: 1.1000001, z: 1.1000001}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1035128276}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 258.99997, y: -682}
-  m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &891297460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891297458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: dc2182bcc2ce02e4ab8878cfa9947c01, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &891297461
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891297458}
-  m_CullTransparentMesh: 1
 --- !u!1 &897116108
 GameObject:
   m_ObjectHideFlags: 0
@@ -9442,7 +9397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.199997, y: -0.8000002}
+  m_AnchoredPosition: {x: -2.199997, y: -0.80000305}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952834055
@@ -9656,7 +9611,6 @@ GameObject:
   - component: {fileID: 992855647}
   - component: {fileID: 992855646}
   - component: {fileID: 992855645}
-  - component: {fileID: 992855648}
   m_Layer: 5
   m_Name: Curtain
   m_TagString: Untagged
@@ -9753,30 +9707,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 749167710}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 992855648}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
@@ -9787,6 +9717,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PFB_Curtain
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &992855646
@@ -9827,60 +9769,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992855643}
   m_CullTransparentMesh: 1
---- !u!114 &992855648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992855643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 11
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &993298560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010440600354, guid: 3756df4f16ccd9f42bec486ecb3219ff, type: 3}
@@ -10259,6 +10147,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 651342256200640906, guid: 16cf0b07a33e1b64783881738c2af316, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277460599610992098, guid: 16cf0b07a33e1b64783881738c2af316, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933199720491190824, guid: 16cf0b07a33e1b64783881738c2af316, type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
@@ -10655,7 +10551,6 @@ GameObject:
   - component: {fileID: 1027546519}
   - component: {fileID: 1027546518}
   - component: {fileID: 1027546517}
-  - component: {fileID: 1027546520}
   m_Layer: 5
   m_Name: Freestandmirror
   m_TagString: Untagged
@@ -10752,30 +10647,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1027546520}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1027546520}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
@@ -10786,6 +10657,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PFB_FreestandMirror
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1027546518
@@ -10826,60 +10709,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027546515}
   m_CullTransparentMesh: 1
---- !u!114 &1027546520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027546515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 13
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &1035128275
 GameObject:
   m_ObjectHideFlags: 0
@@ -10890,7 +10719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035128276}
   m_Layer: 5
-  m_Name: InstantiateMove
+  m_Name: InstantiateMode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10908,11 +10737,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 232557909}
   - {fileID: 1177943749}
-  - {fileID: 891297459}
   - {fileID: 282444665}
   - {fileID: 318994716}
   - {fileID: 972780278}
+  - {fileID: 51604945}
   m_Father: {fileID: 2030370426}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12027,7 +11857,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1035128276}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -12529,7 +12359,6 @@ GameObject:
   - component: {fileID: 1201899447}
   - component: {fileID: 1201899446}
   - component: {fileID: 1201899445}
-  - component: {fileID: 1201899448}
   m_Layer: 5
   m_Name: BedsideTable
   m_TagString: Untagged
@@ -12551,7 +12380,7 @@ RectTransform:
   m_Children:
   - {fileID: 1860431775}
   m_Father: {fileID: 1571703408}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -12626,20 +12455,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
-        m_TargetAssemblyTypeName: ModelIfo, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
         m_Mode: 1
         m_Arguments:
@@ -12650,16 +12467,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1201899448}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 1201899448}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_BedsideTable
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1201899446
@@ -12700,60 +12517,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201899443}
   m_CullTransparentMesh: 1
---- !u!114 &1201899448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201899443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 1
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &1202304325
 GameObject:
   m_ObjectHideFlags: 0
@@ -14697,7 +14460,6 @@ GameObject:
   - component: {fileID: 1535703433}
   - component: {fileID: 1535703432}
   - component: {fileID: 1535703431}
-  - component: {fileID: 1535703434}
   m_Layer: 5
   m_Name: Closet
   m_TagString: Untagged
@@ -14794,30 +14556,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 749167710}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1535703434}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: MenuInfoScaleUp, Assembly-CSharp
         m_MethodName: Open
@@ -14828,6 +14566,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PFB_Closet
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1535703432
@@ -14868,60 +14618,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535703429}
   m_CullTransparentMesh: 1
---- !u!114 &1535703434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535703429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 10
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &1565811652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012351693808, guid: 75434d6852c358145ab099a0eaeea877, type: 3}
@@ -14958,8 +14654,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 630687069}
-  - {fileID: 1201899444}
   - {fileID: 771560848}
+  - {fileID: 1201899444}
   - {fileID: 592550110}
   - {fileID: 32333205}
   - {fileID: 201142771}
@@ -15136,28 +14832,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 18333723}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1578126489}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_KitchenBench
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 636702625}
@@ -15276,7 +14960,6 @@ GameObject:
   - component: {fileID: 1587859224}
   - component: {fileID: 1587859223}
   - component: {fileID: 1587859222}
-  - component: {fileID: 1587859225}
   m_Layer: 5
   m_Name: Sofa
   m_TagString: Untagged
@@ -15373,18 +15056,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 636702625}
         m_TargetAssemblyTypeName: ModelIfo, Assembly-CSharp
         m_MethodName: Open
@@ -15397,16 +15068,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 32333209}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 1587859225}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_Sofa
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1587859223
@@ -15447,60 +15118,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587859220}
   m_CullTransparentMesh: 1
---- !u!114 &1587859225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587859220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306f0b42ba7ce3f48ab4ac226c24165d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MODELNAME: 5
-  meunTittle: {fileID: 170585060}
-  furnitureModel:
-  - {fileID: 72734095}
-  - {fileID: 1861112606}
-  - {fileID: 707461020}
-  - {fileID: 770717217}
-  - {fileID: 1565811652}
-  - {fileID: 256504038}
-  - {fileID: 1468501361}
-  - {fileID: 928743500}
-  - {fileID: 750805569}
-  - {fileID: 1764191510}
-  - {fileID: 1216314095}
-  - {fileID: 865741019}
-  - {fileID: 993298560}
-  - {fileID: 396611402}
-  - {fileID: 2070932147}
-  - {fileID: 1470886316}
-  - {fileID: 1741258304}
-  - {fileID: 1333029518}
-  - {fileID: 1085991600}
-  ShowAR:
-  - {fileID: 886281740}
-  - {fileID: 2126819446}
-  - {fileID: 1947540511}
-  - {fileID: 528303101}
-  - {fileID: 1179046700}
-  - {fileID: 718699995}
-  - {fileID: 1253779633}
-  - {fileID: 1732055845}
-  - {fileID: 650333555}
-  - {fileID: 555955780}
-  - {fileID: 808255753}
-  - {fileID: 1162907137}
-  - {fileID: 1013407761}
-  - {fileID: 1944870512}
-  - {fileID: 1202304327}
-  - {fileID: 1409427024}
-  - {fileID: 556984737}
-  - {fileID: 931920098}
-  - {fileID: 943026604}
 --- !u!1 &1618732668
 GameObject:
   m_ObjectHideFlags: 0
@@ -15602,7 +15219,7 @@ MonoBehaviour:
   arCamera: {fileID: 571361898}
   placeObjectLayMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!4 &1625240465
 Transform:
   m_ObjectHideFlags: 0
@@ -15807,28 +15424,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 18333723}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1668844848}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_Fridge
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 636702625}
@@ -15935,6 +15540,127 @@ MonoBehaviour:
   - {fileID: 556984737}
   - {fileID: 931920098}
   - {fileID: 943026604}
+--- !u!1 &1716841998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716841999}
+  - component: {fileID: 1716842002}
+  - component: {fileID: 1716842001}
+  - component: {fileID: 1716842000}
+  m_Layer: 5
+  m_Name: Button_info_instantiate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1716841999
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716841998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1980701128}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 150, y: 0}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &1716842000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716841998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1716842001}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1716842001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716841998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 79d512fef7bc41c48a7ec4f840330d7a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1716842002
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716841998}
+  m_CullTransparentMesh: 1
 --- !u!1 &1732055843
 GameObject:
   m_ObjectHideFlags: 0
@@ -17197,28 +16923,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 760271469}
+        m_TargetAssemblyTypeName: FurnitureInfo_Setting, Assembly-CSharp
+        m_MethodName: Showif
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 18333723}
-        m_TargetAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-        m_MethodName: ShowInformation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1879858502}
-          m_ObjectArgumentAssemblyTypeName: ShowMenuInformation, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PFB_DiningTable
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 636702625}
@@ -17415,6 +17129,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013640550908, guid: 75434d6852c358145ab099a0eaeea877, type: 3}
   m_PrefabInstance: {fileID: 1891437262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1905159077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905159078}
+  m_Layer: 5
+  m_Name: SelectionMode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1905159078
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905159077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1980701128}
+  m_Father: {fileID: 2030370426}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1927664581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18033,6 +17784,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948379719}
   m_CullTransparentMesh: 1
+--- !u!1 &1980701127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980701128}
+  - component: {fileID: 1980701130}
+  - component: {fileID: 1980701129}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1980701128
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980701127}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1716841999}
+  m_Father: {fileID: 1905159078}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -1450, y: 570}
+  m_SizeDelta: {x: 500, y: 158.1}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1980701129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980701127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC120\uD0DD\uBAA8\uB4DC"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2a8d4905528027644b7a02c583f4108a, type: 2}
+  m_sharedMaterial: {fileID: -6665052436223707078, guid: 2a8d4905528027644b7a02c583f4108a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 126
+  m_fontSizeBase: 126
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1980701130
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980701127}
+  m_CullTransparentMesh: 1
 --- !u!1 &2024850414
 GameObject:
   m_ObjectHideFlags: 0
@@ -18265,7 +18152,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -18283,6 +18170,7 @@ RectTransform:
   m_Children:
   - {fileID: 459694776}
   - {fileID: 1035128276}
+  - {fileID: 1905159078}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

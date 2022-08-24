@@ -16,7 +16,8 @@ public class ShowMenuInformation : MonoBehaviour
     [SerializeReference] private FurinitueModelName MODELNAME;
 
 
-    public TextMeshProUGUI meunTittle;
+    [SerializeField]
+    private TextMeshProUGUI meunTittle;
     public GameObject[] furnitureModel;
     public Button[] ShowAR;
 
@@ -153,4 +154,5 @@ public class ShowMenuInformation : MonoBehaviour
             }
         }
     }
+
 }

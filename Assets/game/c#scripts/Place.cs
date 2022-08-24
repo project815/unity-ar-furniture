@@ -42,6 +42,7 @@ public class Place : MonoBehaviour
         //instatiate mode
         if(!isSelectionMode)
         {
+            Debug.Log("instance");
             if (hits.Count > 0)
             {
                 select.transform.position = hits[0].pose.position;
@@ -57,6 +58,8 @@ public class Place : MonoBehaviour
         //selection mode
         else
         {
+            Debug.Log("selection");
+
             if(!Utility.TryGetInputPosition(out touchPosition)) return;
 
             ray_touchPosition = arCamera.ScreenPointToRay(touchPosition);
