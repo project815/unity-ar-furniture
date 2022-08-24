@@ -10,6 +10,5 @@ public class Furniture_data
     
     public string tittle;
     public GameObject furnitureModel;
-    public Button button_AR;
 
 }

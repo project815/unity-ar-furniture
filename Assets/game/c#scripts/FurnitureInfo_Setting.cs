@@ -15,12 +15,8 @@ public class FurnitureInfo_Setting : MonoBehaviour
         {
             if(frunitureName == furniture[i].furnitureModel.name)
             {
-                FindObjectOfType<MenuInfoScaleUp>().SetUp(furniture[i]);            
+                FindObjectOfType<ShowMenuInfo>().SetUp(furniture[i], frunitureName);            
                 break;
-            }
-            else
-            {
-                Debug.Log("invalid");
             }
         }
     }
@@ -28,7 +24,8 @@ public class FurnitureInfo_Setting : MonoBehaviour
     {
         for(int i = 0; i < furniture.Length; i++)
         {
-            FindObjectOfType<MenuInfoScaleUp>().ReSet(furniture[i]);
+            Debug.Log(i);
+            FindObjectOfType<ShowMenuInfo>().ReSet(furniture[i]);
         }
     }
 }

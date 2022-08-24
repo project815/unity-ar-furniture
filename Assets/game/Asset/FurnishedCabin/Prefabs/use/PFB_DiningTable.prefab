@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 23000011633855202}
   - component: {fileID: 64000010300213678}
   - component: {fileID: 7364249076279108047}
-  - component: {fileID: 6224623889751283652}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: PFB_DiningTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,16 +115,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6224623889751283652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013192189132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac416f2493e11049b75a498cc9a217f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cubeSelected: {fileID: 0}

@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using TMPro;
 
 public class Place : MonoBehaviour
 {
 
-    public GameObject instantiateModeObject;
+    public TextMeshProUGUI text_ModeName;
+    public TextMeshProUGUI text_GuideMessage;
     public List<GameObject> prefab = new List<GameObject>();
     public ARRaycastManager manager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     public Transform indicator;
 
-
+    Vector2 vCenter;
     public Transform pool;
 
     Vector2 touchPosition;
@@ -38,27 +40,41 @@ public class Place : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.Planes);
         //instatiate mode
-        if(!isSelectionMode)
-        {
+        if(!isSelectionMode)    
+        {    
+            manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.AllTypes);
+
             Debug.Log("instance");
+            text_GuideMessage.text = "배치모드";
+            
             if (hits.Count > 0)
             {
+                text_GuideMessage.text = "땅 감지 중.";
+
                 select.transform.position = hits[0].pose.position;
                 
                 select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);                    
             }
             else
             {
+                text_GuideMessage.text = "땅이 감지 되지 않음.";
+
                 if(select != null)
-                select.transform.localScale = new Vector3(0, 0, 0);
+                select.transform.localScale = new Vector3(0f, 0f, 0f);
             }
-        }
+            if(hits.Count > 0)
+            {
+                indicator.position = hits[0].pose.position;
+                indicator.rotation = hits[0].pose.rotation;
+            }
+         }
         //selection mode
         else
         {
             Debug.Log("selection");
+            text_GuideMessage.text = "선택모드";
+
 
             if(!Utility.TryGetInputPosition(out touchPosition)) return;
 
@@ -71,12 +87,18 @@ public class Place : MonoBehaviour
             else PlacedObject.SelectedObject = null;           
         }
 
-        //indicator 
-        if(hits.Count > 0)
+        // indicator 
+
+
+        if(PlacedObject.SelectedObject)
         {
-            indicator.position = hits[0].pose.position;
-            indicator.rotation = hits[0].pose.rotation;
+            text_GuideMessage.text = "선택되었습니다.";
         }
+        else
+        {
+            text_GuideMessage.text = "선택되지 않았습니다..";
+        }
+
     }
 
     public void Select(string name)
@@ -91,7 +113,9 @@ public class Place : MonoBehaviour
             if(name == prefab[i].name)
             {
                 select = Instantiate(prefab[i]);
-                select.transform.Translate(new Vector3(0, 0.1f, 0));                
+                select.transform.Translate(new Vector3(0, 0.1f, 0));     
+                select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);          
+
                 break;
             }
         }
@@ -110,14 +134,15 @@ public class Place : MonoBehaviour
     {
         if(isSelectionMode)
         {
-            instantiateModeObject.SetActive(true);
+            text_ModeName.text = "생성모드";
             isSelectionMode = false;
         } 
         else 
         {
-            instantiateModeObject.SetActive(false);
+            text_ModeName.text = "배치모드";
             isSelectionMode = true;
         }
 
     }
+
 }

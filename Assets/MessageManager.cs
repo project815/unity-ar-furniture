@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class place : MonoBehaviour
+public class MessageManager : MonoBehaviour
 {
+    public TextMeshProUGUI GuideMessage;
+
+    public string [] message;
     // Start is called before the first frame update
     void Start()
     {

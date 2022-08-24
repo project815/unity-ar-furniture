@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000013883122148}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: grp_doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4000013459059310}
   - component: {fileID: 65000013423189194}
   - component: {fileID: 114000014081552152}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: grp_doorsL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 33000013448340986}
   - component: {fileID: 23000012422391696}
   - component: {fileID: 64000011612793574}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tvStandDoor_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,8 +204,7 @@ GameObject:
   - component: {fileID: 114000011518356856}
   - component: {fileID: -8138023746062761227}
   - component: {fileID: 266878741889104025}
-  - component: {fileID: -9141749276822874544}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: PFB_TVStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,19 +291,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-9141749276822874544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010719739470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac416f2493e11049b75a498cc9a217f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cubeSelected: {fileID: 0}
 --- !u!1 &1000010748514882
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +302,7 @@ GameObject:
   - component: {fileID: 4000012614448490}
   - component: {fileID: 65000011051335022}
   - component: {fileID: 114000013607175784}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: 'doorR_interact '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +362,7 @@ GameObject:
   - component: {fileID: 33000012673694026}
   - component: {fileID: 23000011836143780}
   - component: {fileID: 64000011061616948}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tvStandBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000013462128566}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: TVStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +493,7 @@ GameObject:
   - component: {fileID: 33000010313048952}
   - component: {fileID: 23000014197600540}
   - component: {fileID: 64000013265127342}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tvStandDoor_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +590,7 @@ GameObject:
   - component: {fileID: 4000011238391556}
   - component: {fileID: 65000014288398604}
   - component: {fileID: 114000012246477340}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: doorL_interact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +649,7 @@ GameObject:
   - component: {fileID: 4000011884112884}
   - component: {fileID: 65000013513775204}
   - component: {fileID: 114000014183735298}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: grp_doorsR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
