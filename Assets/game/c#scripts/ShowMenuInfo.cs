@@ -26,6 +26,11 @@ public class ShowMenuInfo : MonoBehaviour
         FindObjectOfType<FurnitureInfo_Setting>().DontShow();
     }
 
+    public void EX(GameObject asd)
+    {
+        asd.SetActive(true);
+    }
+
 
     #region tlf
     [SerializeField]

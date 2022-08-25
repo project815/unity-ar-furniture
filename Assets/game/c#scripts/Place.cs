@@ -31,6 +31,7 @@ public class Place : MonoBehaviour
     
     bool isSelectionMode = false;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +46,6 @@ public class Place : MonoBehaviour
         {    
             manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.AllTypes);
 
-            Debug.Log("instance");
             text_GuideMessage.text = "배치모드";
             
             if (hits.Count > 0)
@@ -73,7 +73,6 @@ public class Place : MonoBehaviour
         else
         {
             Debug.Log("selection");
-            text_GuideMessage.text = "선택모드";
 
 
             if(!Utility.TryGetInputPosition(out touchPosition)) return;
@@ -81,23 +80,19 @@ public class Place : MonoBehaviour
             ray_touchPosition = arCamera.ScreenPointToRay(touchPosition);
             if(Physics.Raycast(ray_touchPosition, out hit, Mathf.Infinity, placeObjectLayMask))
             {
+                text_GuideMessage.text = "선택되었습니다.";
                 PlacedObject.SelectedObject = hit.transform.GetComponentInChildren<PlacedObject>();
                 return;
             } 
-            else PlacedObject.SelectedObject = null;           
+            else 
+            {
+                text_GuideMessage.text = "선택되지 않았습니다..";
+
+                PlacedObject.SelectedObject = null;        
+            }
+
         }
 
-        // indicator 
-
-
-        if(PlacedObject.SelectedObject)
-        {
-            text_GuideMessage.text = "선택되었습니다.";
-        }
-        else
-        {
-            text_GuideMessage.text = "선택되지 않았습니다..";
-        }
 
     }
 
@@ -144,5 +139,6 @@ public class Place : MonoBehaviour
         }
 
     }
+    
 
 }
