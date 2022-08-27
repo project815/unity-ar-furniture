@@ -29,7 +29,7 @@ public class Place : MonoBehaviour
     private Ray ray_touchPosition;
     private RaycastHit hit;
     
-    bool isSelectionMode = false;
+    public bool isSelectionMode = false;
 
 
     // Start is called before the first frame update
@@ -44,35 +44,33 @@ public class Place : MonoBehaviour
         //instatiate mode
         if(!isSelectionMode)    
         {    
-            manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.AllTypes);
-
-            text_GuideMessage.text = "배치모드";
-            
-            if (hits.Count > 0)
+            if(select != null)
             {
-                text_GuideMessage.text = "땅 감지 중.";
+                manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.AllTypes);
 
-                select.transform.position = hits[0].pose.position;
-                
-                select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);                    
-            }
-            else
-            {
-                text_GuideMessage.text = "땅이 감지 되지 않음.";
+                if (hits.Count > 0)
+                {
+                    text_GuideMessage.text = "땅 감지 중.";
 
-                if(select != null)
-                select.transform.localScale = new Vector3(0f, 0f, 0f);
-            }
-            if(hits.Count > 0)
-            {
-                indicator.position = hits[0].pose.position;
-                indicator.rotation = hits[0].pose.rotation;
+                    select.transform.position = hits[0].pose.position;
+                    select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                }
+                else
+                {
+                    text_GuideMessage.text = "땅이 감지 되지 않음.";
+
+                    select.transform.localScale = new Vector3(0f, 0f, 0f);
+                }
+                if(hits.Count > 0)
+                {
+                    indicator.position = hits[0].pose.position;
+                    indicator.rotation = hits[0].pose.rotation;
+                }
             }
          }
         //selection mode
         else
         {
-            Debug.Log("selection");
 
 
             if(!Utility.TryGetInputPosition(out touchPosition)) return;
@@ -101,6 +99,7 @@ public class Place : MonoBehaviour
         if(select != null)
         {
             Destroy(select);
+
             select = null;
         } // 뭔가 있으면 지우고 시작.
         for(int i =0; i < prefab.Count; i++)
@@ -108,22 +107,28 @@ public class Place : MonoBehaviour
             if(name == prefab[i].name)
             {
                 select = Instantiate(prefab[i]);
-                select.transform.Translate(new Vector3(0, 0.1f, 0));     
-                select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);          
-
                 break;
             }
         }
     }
+
+    public GameObject notselectedMessage;
+
     public void Set() //place
     {
-        select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        if(select == null)
+        {
+            notselectedMessage.SetActive(true);
+        }
+        else
+        {
+            select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            select.transform.SetParent(pool); //부모 자식 관계 부모를 링크함.
         
-        select.transform.Translate(new Vector3(0, 0, 0));
-        select.transform.SetParent(pool); //부모 자식 관계 부모를 링크함.
-        //pool
-        //select는 널이 된다. 
-        select = null;
+            //pool
+            //select는 널이 된다. 
+            select = null;
+        }
     }
     public void SelectionModeChange()
     {

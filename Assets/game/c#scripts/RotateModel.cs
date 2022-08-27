@@ -6,7 +6,6 @@ public class RotateModel : MonoBehaviour
 {
     private void Awake() {
         transform.LeanMoveLocal(new Vector2(0, 0.6f), 1).setEaseInOutSine().setLoopPingPong();
-
     }
     // Update is called once per frame
     void Update()

@@ -25,7 +25,7 @@ public class MenuSliding : MonoBehaviour
     {
         transform.LeanMoveLocal(new Vector2(-1200, 0), 0.5f);
     }
-    private void DontShowButton()
+    public void DontShowButton()
     {
         transform.LeanMoveLocal(new Vector2(-2200, 0), 0.5f);
     }

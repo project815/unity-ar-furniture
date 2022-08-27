@@ -5,8 +5,8 @@ using UnityEngine.EventSystems;
 
 public class PlacedObject : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject cubeSelected;
+    
+    public GameObject cubeSelected;
 
     public bool InSelected // when object select , active - property
     {
@@ -41,9 +41,13 @@ public class PlacedObject : MonoBehaviour
     }
 
 
+
+
+    
     void Update()
     {
-        if(InSelected)
+
+        if(InSelected && FindObjectOfType<Place>().isSelectionMode)
         {
             if (Input.touchCount == 2)
             {
@@ -54,9 +58,11 @@ public class PlacedObject : MonoBehaviour
             {
                 RotateControler();
             }
-        }
+            selectedObject.GetComponentInChildren<Animator>().SetTrigger("isSelected");
 
+        }   
     }
+    
     float initialDistance;
     Vector3 initialScale;
 
@@ -101,7 +107,7 @@ public class PlacedObject : MonoBehaviour
     }
 
 
-    [SerializeField] private float rotationRate = 3.0f;
+   public float rotationRate = 3.0f;
     private bool m_rotating = false;
     private float m_previousX;
     private float m_previousY;

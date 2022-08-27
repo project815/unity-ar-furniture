@@ -23,15 +23,7 @@ public class ShowMenuInfo : MonoBehaviour
     public void Close()
     {
         transform.LeanScale(Vector2.zero, 0.4f).setEaseInBack();
-        FindObjectOfType<FurnitureInfo_Setting>().DontShow();
     }
-
-    public void EX(GameObject asd)
-    {
-        asd.SetActive(true);
-    }
-
-
     #region tlf
     [SerializeField]
     private TextMeshProUGUI text_tittle;
@@ -45,7 +37,7 @@ public class ShowMenuInfo : MonoBehaviour
 
         furniture.furnitureModel.gameObject.SetActive(true);
 
-        Button_ARlocate.onClick.AddListener(FindObjectOfType<ShowMenuInfo>().Close);
+        Button_ARlocate.onClick.AddListener(FindObjectOfType<DialogBox>().CloseDialog);
         Button_ARlocate.onClick.AddListener(() => FindObjectOfType<PlaneDetection>().ShowPlane(true));
         Button_ARlocate.onClick.AddListener(() => place.GetComponent<Place>().Select(ModelName));
     }

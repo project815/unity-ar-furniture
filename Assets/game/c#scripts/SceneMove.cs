@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Management;
+using UnityEngine.XR.ARFoundation;
+
 using UnityEngine.UI;
 
 public class SceneMove : MonoBehaviour
@@ -11,6 +14,9 @@ public class SceneMove : MonoBehaviour
     private int SceneNumer;
     private string SceneName;
 
+    public void Awake()
+    {
+    }
     public void FadeSceneMove(int num)
     {
         SceneNumer = num;
@@ -35,4 +41,12 @@ public class SceneMove : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Delete_AR()
+    {
+        var xrManagerSettings = UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager;
+        xrManagerSettings.DeinitializeLoader();
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex); // reload current scene
+        xrManagerSettings.InitializeLoaderSync();
+    }
+
 }
