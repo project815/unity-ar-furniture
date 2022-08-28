@@ -37,8 +37,6 @@ public class ShowMenuInfo : MonoBehaviour
 
         furniture.furnitureModel.gameObject.SetActive(true);
 
-        Button_ARlocate.onClick.AddListener(FindObjectOfType<DialogBox>().CloseDialog);
-        Button_ARlocate.onClick.AddListener(() => FindObjectOfType<PlaneDetection>().ShowPlane(true));
         Button_ARlocate.onClick.AddListener(() => place.GetComponent<Place>().Select(ModelName));
     }
     public void ReSet(Furniture_data furniture)

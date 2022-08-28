@@ -98,10 +98,13 @@ public class PlacedObject : MonoBehaviour
             // get the scale factor of the current distance relative to the inital one
             var factor = currentDistance / initialDistance;
 
+            if(factor < 2)
+            {
+                selectedObject.transform.localScale = initialScale * factor;
+            }
             // apply the scale
             // instead of a continuous addition rather always base the 
             // calculation on the initial and current value only
-            selectedObject.transform.localScale = initialScale * factor;
         }
     }
 

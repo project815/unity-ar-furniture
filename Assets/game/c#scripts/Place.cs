@@ -10,7 +10,6 @@ public class Place : MonoBehaviour
 
     public TextMeshProUGUI text_ModeName;
     public TextMeshProUGUI text_GuideMessage;
-    public TextMeshProUGUI text_Furniture_cnt;
     public List<GameObject> prefab = new List<GameObject>();
     public ARRaycastManager manager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
@@ -42,7 +41,6 @@ public class Place : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text_Furniture_cnt.text = "배치된 가구 수 : " + cnt;
         manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.AllTypes);
 
 
