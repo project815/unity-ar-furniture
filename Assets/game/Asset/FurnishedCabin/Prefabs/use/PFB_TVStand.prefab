@@ -202,7 +202,6 @@ GameObject:
   - component: {fileID: 4000011810544638}
   - component: {fileID: -8138023746062761227}
   - component: {fileID: -5439982385955751919}
-  - component: {fileID: -297425587616335954}
   m_Layer: 7
   m_Name: PFB_TVStand
   m_TagString: Untagged
@@ -219,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 1000010719739470}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4000013462128566}
@@ -239,8 +238,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.14, y: 0.73, z: 0.58}
+  m_Center: {x: 0, y: 0.22, z: 0}
 --- !u!114 &-5439982385955751919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,26 +254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubeSelected: {fileID: 5129332568068950386, guid: ec0c35c1bc9ef3344ab576ec8795e1be, type: 3}
   rotationRate: 1
---- !u!95 &-297425587616335954
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010719739470}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 10e16c15ff0549d44876fbc42564f7bd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1000010748514882
 GameObject:
   m_ObjectHideFlags: 0

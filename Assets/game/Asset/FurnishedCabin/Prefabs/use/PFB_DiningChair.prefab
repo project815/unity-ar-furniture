@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 23000013386942184}
   - component: {fileID: 64000012049032910}
   - component: {fileID: 4395414876918405640}
-  - component: {fileID: -3885685645706091772}
   m_Layer: 7
   m_Name: PFB_DiningChair
   m_TagString: Untagged
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1000011361762870}
   m_LocalRotation: {x: -0, y: 0.6510818, z: -0, w: 0.75900763}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,23 +113,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubeSelected: {fileID: 5129332568068950386, guid: ec0c35c1bc9ef3344ab576ec8795e1be, type: 3}
   rotationRate: 1
---- !u!95 &-3885685645706091772
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011361762870}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 10e16c15ff0549d44876fbc42564f7bd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

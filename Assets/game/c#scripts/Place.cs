@@ -10,6 +10,7 @@ public class Place : MonoBehaviour
 
     public TextMeshProUGUI text_ModeName;
     public TextMeshProUGUI text_GuideMessage;
+    public TextMeshProUGUI text_Furniture_cnt;
     public List<GameObject> prefab = new List<GameObject>();
     public ARRaycastManager manager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
@@ -41,56 +42,57 @@ public class Place : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //instatiate mode
-        if(!isSelectionMode)    
-        {    
-            if(select != null)
-            {
-                manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.AllTypes);
+        text_Furniture_cnt.text = "배치된 가구 수 : " + cnt;
+        manager.Raycast(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f), hits, TrackableType.AllTypes);
 
-                if (hits.Count > 0)
-                {
-                    text_GuideMessage.text = "땅 감지 중.";
 
-                    select.transform.position = hits[0].pose.position;
-                    select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-                }
-                else
-                {
-                    text_GuideMessage.text = "땅이 감지 되지 않음.";
-
-                    select.transform.localScale = new Vector3(0f, 0f, 0f);
-                }
-                if(hits.Count > 0)
-                {
-                    indicator.position = hits[0].pose.position;
-                    indicator.rotation = hits[0].pose.rotation;
-                }
-            }
-         }
-        //selection mode
-        else
+        if(select != null)
         {
+            text_GuideMessage.text = "선택된 가구가 존재합니다.";
 
+            if (hits.Count > 0)
+            {
 
-            if(!Utility.TryGetInputPosition(out touchPosition)) return;
+                select.transform.position = hits[0].pose.position;
+            }
+            else
+            {
+                text_GuideMessage.text = "감지되지 않은 영역입니다. 다시 인식시켜주세요.";
+                return;
+            }
+        }
+        else if(select == null && cnt == 0)
+        {
+            text_GuideMessage.text = "선택된 가구가 없습니다.\n가구배치를 원한다면 왼쪽 메뉴바를 이용해주세요.";
+        }
+        else if(select == null && 0 < cnt)
+        {
+            text_GuideMessage.text = "배치완료";
+        }
+        
+        if(!Utility.TryGetInputPosition(out touchPosition)) return;
 
             ray_touchPosition = arCamera.ScreenPointToRay(touchPosition);
-            if(Physics.Raycast(ray_touchPosition, out hit, Mathf.Infinity, placeObjectLayMask))
-            {
-                text_GuideMessage.text = "선택되었습니다.";
-                PlacedObject.SelectedObject = hit.transform.GetComponentInChildren<PlacedObject>();
-                return;
-            } 
-            else 
-            {
-                text_GuideMessage.text = "선택되지 않았습니다..";
 
-                PlacedObject.SelectedObject = null;        
-            }
-
+        if(Physics.Raycast(ray_touchPosition, out hit, Mathf.Infinity, placeObjectLayMask))
+        {
+            PlacedObject.SelectedObject = hit.transform.GetComponentInChildren<PlacedObject>();
+            select = PlacedObject.SelectedObject.gameObject;
+            return;
+        } 
+        else 
+        {
+            PlacedObject.SelectedObject = null;        
         }
+        
 
+
+
+        if(hits.Count > 0)
+        {
+            indicator.position = hits[0].pose.position;
+            indicator.rotation = hits[0].pose.rotation;
+        }
 
     }
 
@@ -113,7 +115,7 @@ public class Place : MonoBehaviour
     }
 
     public GameObject notselectedMessage;
-
+    int cnt;
     public void Set() //place
     {
         if(select == null)
@@ -122,28 +124,17 @@ public class Place : MonoBehaviour
         }
         else
         {
-            select.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             select.transform.SetParent(pool); //부모 자식 관계 부모를 링크함.
-        
+            select.transform.position = hits[0].pose.position;
+            cnt++;
             //pool
             //select는 널이 된다. 
             select = null;
         }
+        // if(isSelectionMode && PlacedObject.SelectedObject != null)
+        // {
+        //     PlacedObject.SelectedObject.transform.position = hits[0].pose.position;
+        // }
     }
-    public void SelectionModeChange()
-    {
-        if(isSelectionMode)
-        {
-            text_ModeName.text = "생성모드";
-            isSelectionMode = false;
-        } 
-        else 
-        {
-            text_ModeName.text = "배치모드";
-            isSelectionMode = true;
-        }
-
-    }
-    
 
 }

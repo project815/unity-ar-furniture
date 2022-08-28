@@ -26,6 +26,7 @@ public class PlacedObject : MonoBehaviour
             if(selectedObject != null)
             {
                 selectedObject.cubeSelected.SetActive(false);
+
             }
 
             selectedObject = value;
@@ -47,25 +48,23 @@ public class PlacedObject : MonoBehaviour
     void Update()
     {
 
-        if(InSelected && FindObjectOfType<Place>().isSelectionMode)
+
+        if(InSelected)
         {
             if (Input.touchCount == 2)
             {
                 ScaleControler();
-
+                
             }
-            else if(Input.touchCount == 1)
+            if(Input.touchCount == 1)
             {
                 RotateControler();
             }
-            selectedObject.GetComponentInChildren<Animator>().SetTrigger("isSelected");
-
         }   
     }
-    
+ 
     float initialDistance;
     Vector3 initialScale;
-
     private void ScaleControler()
     {
         var touchZero = Input.GetTouch(0); 
@@ -107,7 +106,7 @@ public class PlacedObject : MonoBehaviour
     }
 
 
-   public float rotationRate = 3.0f;
+    public float rotationRate = 3.0f;
     private bool m_rotating = false;
     private float m_previousX;
     private float m_previousY;
