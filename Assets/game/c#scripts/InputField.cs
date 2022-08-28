@@ -92,9 +92,9 @@ public class InputField : MonoBehaviour
         }
         if(input != "Not")
         {    
-            UImanager.GetComponent<FurnitureInfo_Setting>().Showif(input);
             GameDialog.gameObject.SetActive(true);
             Categary.GetComponent<MenuSliding>().DontShowButton();    
+            UImanager.GetComponent<FurnitureInfo_Setting>().Showif(input);
         }
         else
         {
