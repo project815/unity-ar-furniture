@@ -52,12 +52,18 @@ public class Place : MonoBehaviour
             {
 
                 select.transform.position = hits[0].pose.position;
+
+                indicator.gameObject.SetActive(true);
+                indicator.position = hits[0].pose.position;
+                indicator.rotation = hits[0].pose.rotation;
+            
             }
             else
             {
                 text_GuideMessage.text = "감지되지 않은 영역입니다. 다시 인식시켜주세요.";
                 return;
             }
+            
         }
         else if(select == null && cnt == 0)
         {
@@ -82,15 +88,12 @@ public class Place : MonoBehaviour
         {
             PlacedObject.SelectedObject = null;        
         }
+        indicator.gameObject.SetActive(false);
         
 
 
 
-        if(hits.Count > 0)
-        {
-            indicator.position = hits[0].pose.position;
-            indicator.rotation = hits[0].pose.rotation;
-        }
+    
 
     }
 

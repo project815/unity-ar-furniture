@@ -92,16 +92,13 @@ public class PlacedObject : MonoBehaviour
             // otherwise get the current distance
             var currentDistance = Vector2.Distance(touchZero.position, touchOne.position);
 
-            // A little emergency brake ;)
+            // A little emergency brake ;
             if(Mathf.Approximately(initialDistance, 0)) return;
 
             // get the scale factor of the current distance relative to the inital one
             var factor = currentDistance / initialDistance;
 
-            if(factor < 2)
-            {
-                selectedObject.transform.localScale = initialScale * factor;
-            }
+            selectedObject.transform.localScale = initialScale * factor;
             // apply the scale
             // instead of a continuous addition rather always base the 
             // calculation on the initial and current value only
